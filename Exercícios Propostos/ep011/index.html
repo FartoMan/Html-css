@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/cgr-300.png" type="image/x-icon">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Trabalhando com mídias em HTML5</h1>
+
+    <ul>
+        <li><a href="pag02.html" target="_self" rel="next">Imagens</a></li>
+        <li><a href="pag03.html" target="_self" rel="next">Áudios</a></li>
+        <li><a href="pag04.html" target="_self" rel="next">Vídeos</a></li>
+    </ul>
+    
+    <p>Utilizando a tag <code>&lt;picture&gt;</code>, inserimos a imagem original dentro dela com a tag <code>&lt;img&gt;</code>:</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/cgr-300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/cgr-700.png" type="image/png">
+        <img src="Imagens/cgr-1000.png" alt="Imagem 1000px">
+    </picture>
+</body>
+</html>

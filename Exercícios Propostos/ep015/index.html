@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Seletores CSS</title>
+</head>
+<body>
+    <h1 id="titulo-principal">Seletores CSS <code>id</code> e <code>class</code></h1>
+    <h1 class="topico">Seletor ID</h1>
+    <h2>Como usar</h2>
+    <p class="texto">Para utilizar um seletor <code>id</code>, aplicamos ele dentro da tag HTML e acionamos <code>id="nome"</code>.</p>
+    <p class="texto">Temos que aplicar dentro da <abbr title="CSS">folha de estilos</abbr> (ou na área <code>&lt;style&gt;</code> no cabeçalho) um símbolo de # mais o nome, dessa forma:</p>
+    <pre>
+        <code>
+            #nome {
+                color: #FF0000
+            }
+    </code>
+    </pre>
+    <h2>Como funciona</h2>
+    <p class="texto">Ao aplicar um <code>id</code> a um elemento HTML, esse elemento aplicará as atribuições especificadas a ele, junto com as dadas as personalizações dadas diretamente à <code>tag</code>.</p>
+    <p class="texto">Temos a seguir seguintes atribuições à tag <code>&lt;p&gt;:</code></p>
+    <pre>
+        <code>
+            p {
+                font-size: 16px;
+            }
+
+            #grande {
+                font-size: 20px;
+                color: green;
+            }
+        </code>
+    </pre>
+    <p class="texto">Aplicando Ao código HTML, os próximos dois parágrafos são um exemplo do que pode ser obtido:</p>
+    <pre>
+    <p><abbr title="&lt;p&gt;">Parágrafo normal.</abbr></p>
+    <p class="grande"><abbr title="&lt;p id=''grande''&gt;">Parágrafo grande.</abbr></p>
+    </pre>
+    <!-- Seletor Class -->
+    <h1 class="topico">Seletor Class</h1>
+    <h2>Como usar</h2>
+    <p class="texto">Semelhante ao <code>id</code>, dentro da tag, utilizamos <code>class="titulo"</code>.</p>
+    <p class="texto">Devendo estar especificado dentro da CSS com um <code>.</code> + o nome dado, no caso, <code>titulo</code>, dessa maneira:</p>
+    <p>Header</p>
+    <pre>
+        <code>
+            .titulo {
+                text-weight: bold;
+            }
+        </code>
+    </pre>
+    <p>Body</p>
+    <pre>
+        <code>
+            &lt;h1 class="titulo"&gt;Título 1&lt;h1&gt;
+        </code>
+    </pre>
+    <h2>Como funciona</h2>
+    <p class="texto">Idêntico ao <code>id</code>, a aplicação unirá às atribuições já dadas à tag, ou irá sobrepor uma mesma atribuição que tenha valores diferentes.</p>
+    <p class="texto">Podemos utilizar o mesmo exemplo anterior:</p>
+    <pre>
+        <code>
+            p {
+                font-size: 16px;
+            }
+
+            .grande {
+                font-size: 20px;
+                color: green;
+            }
+        </code>
+    </pre>
+    <p>O resultado será idêntico ao do <code>id</code>:</p>
+    <pre>
+        <p><abbr title="&lt;p&gt;">Parágrafo normal.</abbr></p>
+        <p class="grande"><abbr title="&lt;p id=''grande''&gt;">Parágrafo grande.</abbr></p>
+    </pre>
+    <p class="texto">Acesse: <a href="pseudoclass.html" target="_self">Pseudo-classes</a></p>
+</body>
+</html>

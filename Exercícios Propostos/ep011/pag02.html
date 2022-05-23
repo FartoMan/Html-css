@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/cgr-300.png" type="image/x-icon">
+    <title>Imagens flexíveis</title>
+</head>
+<body>
+    <h1>Imagens "flexíveis"</h1>
+
+    <ul>
+        <li><a href="index.html" target="_self" rel="prev">Index</a></li>
+        <li><a href="pag03.html" target="_self" rel="prev">Áudios</a></li>
+        <li><a href="pag04.html" target="_self" rel="next">Vídeos</a></li>
+    </ul>
+
+    <h2>Inserindo imagens flexíveis</h2>
+
+    <pre><code>
+        &lt;picture&gt;
+            &lt;source media="(max-width: 720px)"
+            srcset="Imagens/panpit-cel.jpg" type="image/jpg"&gt;
+            &lt;img src="Imagens/panpit-larg.JPG"
+            alt="Fotografia de duas cadelas deitadas dormindo,
+            uma no sofá e outra logo abaixo do sofá"&gt;
+        &lt;/picture&gt;
+    </code></pre>
+
+    <p><mark>Imagens "flexíveis"</mark> é um recurso da <abbr title="HyperText Markup Language">HTML</abbr> que altera uma imagem quando o navegador apresentar diferentes dimensões (<em>em píxels</em>). Ou seja, podemos alterar uma imagem para uma escala menor para se adequar às dimensões de cada navegador, evitando assim a barra de rolagem para a sua visualização. O ideal é que seja <strong>para se adequar melhor a diversos dispositivos</strong>.</p>
+    <ul type="square">
+        <li>É interessante criar alguns arquivos em escala reduzida para melhor desempenho do site em diversos dispositivos. O arquivo é carregado pelo atributo <code><mark>srcset</mark></code> na tag <code>&lt;source&gt;</code></code></li>
+        <li>A tag <code>&lt;source&gt;</code> deve vir sempre antes da tag <code>&lt;img&gt;</code>, pois o navegador lerá primeiro como ele irá se adequar para a apresentação da imagem, lendo as especificações dadas no atributo <code>media="(<mark>max-width</mark> ou min-width: 000px)"</code>.</li>
+        <li>Ideal para reduzir o uso de <strong>dados de rede</strong> em dispositivos móveis.</li>
+        <li>Para mais informações, acesse <a href="https://www.w3schools.com/tags/tag_picture.asp" target="_blank" rel="external" hreflang="en">W3School: HTML picture tag</a>.</li>
+    </ul>
+    <p>Altere o tamanho do seu navegador para que a imagem abaixo mude.</p>
+
+    <picture>
+        <source media="(max-width: 740px)" srcset="Imagens/juhpan-300.jpg" type="image/jpg">
+        <source media="(max-width: 1220px)" srcset="Imagens/juhpan-720.jpg" type="image/jpg">
+        <img src="Imagens/juhpan-1200.JPG" alt="Fotografia de duas cadelas deitadas tomando sol para se secar, em perspectiva de uma um pouco mais atrás da outra">
+    </picture>
+</body>
+</html>

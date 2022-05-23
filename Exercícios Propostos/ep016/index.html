@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            width: 300px;
+            height: 50px;
+            background-color: lightgray;
+            border-width: 10px;
+            border-style: ridge;
+            border-color: red;
+            border-radius: 30px 10px;
+            padding: 20px;
+            outline-width: 30px;
+            outline-style: solid;
+            outline-color: blue;
+            margin: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            background-color: aquamarine;
+        }
+
+        .border {
+            border: 5px solid green;
+        }
+
+        .outline {
+            outline: 10px solid red;
+        }
+
+        .padding {
+            padding: 15px ;
+        }
+
+        .margin {
+            margin: 20px;
+        }
+
+        a {
+            color: red;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            border: 1px dotted blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Caixas</h1>
+    <h2 class="border">Caixa com <code>border</code></h2>
+    <h2 class="outline">Caixa com <code>outline</code></h2>
+    <h2 class="padding">Caixa com <code>padding</code></h2>
+    <h2 class="margin">Caixa com <code>margin</code></h2>
+    <h2 class="margin outline">Caixa com <code>margin</code> e <code>outline</code></h2>
+    <h2 class="margin border">Caixa com <code>margin</code> e <code>border</code></h2>
+    <h2 class="margin border outline">Caixa com <code>margin</code>, <code>border</code> e <code>outline</code></h2>
+    <h2 class="border outline">Caixa com <code>border</code> e <code>outline</code></h2>
+    <h2 class="padding border">Caixa com <code>padding</code> e <code>border</code></h2>
+    <h2 class="padding outline">Caixa com <code>padding</code> e <code>outline</code></h2>
+    <h2 class="padding border outline">Caixa com <code>padding</code>, <code>border</code> e <code>outline</code></h2>
+    <a href="estsite.html">Estrutra de uma página</a>
+</body>
+</html>

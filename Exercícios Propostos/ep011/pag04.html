@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/cgr-300.png" type="image/x-icon">
+    <title>Manipulação de Vídeos</title>
+</head>
+<body>
+    <h1>Mexendo com vídeos</h1>
+
+    <ul>
+        <li><a href="index.html" target="_self" rel="prev">Index</a></li>
+        <li><a href="pag02.html" target="_self" rel="prev">Imagens</a></li>
+        <li><a href="pag03.html" target="_self" rel="prev">Áudios</a></li>
+    </ul>
+
+    <h2>Inserindo vídeos a partir do servidor</h2>
+
+    <pre><code>
+        &lt;video width="600" height="400" poster="thumb.jpg" controls&gt;
+            &lt;source src="Videos/video-bomb.mp4" type="video/mp4"&gt;
+            &lt;source src="Videos/video-bomb.webm" type="video/webm"&gt;
+            &lt;p&gt;O navegador não suporta vídeos.&lt;/p&gt;
+        &lt;/video&gt;
+    </code></pre>
+
+    <p>Para inserir vídeos que estão dentro do servidor (ou da nossa máquina), utilizamos as tags <code>&lt;video&gt;</code> e <code>&lt;/video&gt;</code>, com atributos de largura, <code>width="xxx"</code>, e altura, <code>height="xxx"</code> e <code>controls</code> para que o player seja exibido. Entre as duas tags, inserimos o vídeo com a tag <code>&lt;source&gt;</code> e devemos indicar o local do arquivo de vídeo com o atributo <code>src="arquivo.mp4"</code> e específicar qual o formato com o atributo <code>type="video/<mark>formato</mark>"</code> (HTML suporta três tipos de vídeo: <a href="https://pt.wikipedia.org/wiki/Mp4" target="_blank" rel="external"><mark>MP4</mark></a>, <a href="https://www.webmproject.org/about/" target="_blank" rel="external" hreflang="en"><mark>WebM</mark></a> e <a href="https://pt.wikipedia.org/wiki/Ogg" target="_blank" rel="external"><mark>OGG</mark></a>). Com isso, já podemos vizualizar o vídeo em nosso site.</p>
+    <ul type="square">
+        <li>Assim como com <a href="pag03.html" target="_self" rel="prev">áudios</a>, devemos disponibilizar mais de um formato de vídeo para o navegador carregar caso o primeiro não seja suportando</li>
+        <li>É interessante um parágrafo <code>&lt;p&gt;</code> antes da tag de fechamento <code>&lt;/video&gt;</code> com uma mensagem informando que o navegador não suporta vídeo.</li>
+        <li>Possivelmente, será <mark>necessário converter o vídeo</mark>, mesmo que para o mesmo formato, usando um conversor para que seja utilizado um <em>codec</em> compatível com o navegador.</li>
+        <li>Sempre utilizar os atributos <code>width="xxx"</code> e <code>height="xxx"</code> com as dimensões do vídeo. Isso fará com que o navegador reserve o devido espaço na página para a apresentação do vídeo, evitando o redimensionamento da página durante o seu carregamento.</li>
+        <ul>
+            <li>Não usar <code>width</code> e <code>height</code> para diminuir as dimensões do vídeo, pois ele consumirá os mesmos dados do original para ser exibido.</li>
+            <li>Para isso, usar <abbr title="Sony Vegas, por exemplo">editores de vídeo</abbr> para redimensioná-los.</li>
+        </ul>
+    </ul>
+
+    <video width="576" height="432" controls>
+        <source src="Videos/video-bomb.webm" type="video/webm">
+        <source src="Videos/video-bomb.mp4" type="video/mp4">
+        <p>O navegador não suporta vídeos!</p>
+    </video>
+
+    <h2>Inserindo vídeos a partir de URL</h2>
+    <p>Armazenar os vídeos no próprio servidor pode sair meio caro e até consumir muitos dados dos clientes. Uma ótima solução é utilizar o próprio <a href="https://www.youtube.com/" target="_blank" rel="external">YouTube</a> para subir seus vídeos e utilizar a opção de embed, nas opções de compartilhar. Ele entrega um código HTML pronto, que é só copiar e colar no código.</p>
+    <img src="Imagens/codvideo1.jpg" alt="Imagem do botão de Share do YouTube">
+    <img src="Imagens/codvideo2.JPG" alt="Imagem do botão de Embed do YouTube">
+    <img src="Imagens/codvideo3.JPG" alt="Imagem do código gerado em HTML pelo YouTube">
+
+    <p>O resultado é esse:</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eO44Z6ikkZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <ul type="square">
+        <li>Sobre a tag <code>&lt;iframe&gt;</code>, acesse: <a href="https://www.w3schools.com/tags/tag_iframe.asp">W3School: HTML iframe Tag</a></li>
+    </ul>
+
+</body>
+</html>

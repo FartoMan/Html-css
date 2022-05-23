@@ -1,0 +1,58 @@
+body {
+    font: normal 1em Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    color: #752D28;
+}
+
+#titulo-principal {
+    background-color: #752D28;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.topico {
+    margin-left: 30px;
+}
+
+.texto {
+    text-align: justify;
+}
+
+h2 {
+    color: #B5463E;
+}
+
+code {
+    font-size: 1.05em;
+}
+
+pre {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1cdca;
+    width: 400px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.grande {
+    font-size: 20px;
+    color: green;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+}
+
+a:visited {
+    color: darkred;
+}
+a:hover {
+    text-decoration: underline;
+}

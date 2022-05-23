@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Site</title>
+    <style>
+        .border {
+            border: 1px solid black;
+            padding: 2px;
+            margin: 2px;
+        }
+
+        a {
+            font-weight: bold;
+            color: red;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            font-size: 1.1em;
+            border: 2px dashed green;
+            box-shadow: 0px 0px 10px blue;
+        }
+    </style>
+</head>
+<header class="border">
+    <h1>Estrutura de Site</h1>
+    <nav class="border">link link link</nav>
+</header>
+<main class="border">
+    <section class="border">
+        <article class="border">
+            <h2>Título</h2>
+            <p>Texto do artigo</p>
+        </article>
+        <article class="border">
+            <h2>Título 2</h2>
+            <p>Texto mais texto</p>
+            <aside class="border">
+                imagem
+            </aside>
+        </article>
+    </section>
+    <aside class="border">
+        listas
+    </aside>
+</main>
+<footer class="border">
+    notas notas
+</footer>
+<a href="index.html">Página das caixas</a>
+</html>

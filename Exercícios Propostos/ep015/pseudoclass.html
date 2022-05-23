@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pseudo-Classes</title>
+    <style>
+        .exemplo-hover:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo-principal">Pseudo-Classes</h1>
+    <h2>O que são?</h2>
+    <p class="texto">Pseudo-Classes são palavras-chaves que dizem respeito ao estado atual de uma determinada classe. Ao ser declarada e reconhecido esse estado, podemos adicionar eventos a ele, como mudar a cor do texto ou do background e muito mais.</p>
+    <h2>Como aplicar</h2>
+    <p class="texto">Após a declaração de um seletor na <abbr title="CSS">folha de estilos</abbr>, coloca-se o sinal de dois pontos e a palavra-chave. Veja:</p>
+    <pre>
+        <code>
+            p:hover {
+                color: red;
+            }
+        </code>
+    </pre>
+    <p>Resultando:</p>
+    <pre>
+            <p class="exemplo-hover">Texto de exemplo</p>
+            <p>E um texto com <span class="exemplo-hover">span</span></p>
+    </pre>
+    <p class="texto">Os links foram personalizados utilizando o seguinte esquema de pseudo-classe:</p>
+    <pre>
+        <code>
+            a {
+                font-weight: bold;
+                text-decoration: none;
+                color: red;
+            }
+            
+            a:visited {
+                color: darkred;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </code>
+    </pre>
+    <p>Acesse: <a href="index.html" target="_self" rel="prev">id e classe</a></p>
+</body>
+</html>

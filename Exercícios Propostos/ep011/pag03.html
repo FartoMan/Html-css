@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/cgr-300.png" type="image/x-icon">
+    <title>Manipulação de audios</title>
+</head>
+<body>
+    <h1>Mexendo com áudios</h1>
+
+    <ul>
+        <li><a href="index.html" target="_self" rel="prev">Index</a></li>
+        <li><a href="pag02.html" target="_self" rel="prev">Imagens</a></li>
+        <li><a href="pag04.html" target="_self" rel="next">Vídeos</a></li>
+    </ul>
+
+    <h2>Inserindo áudios</h2>
+
+    <pre><code>
+        &lt;audio preload="metadata" controls autoplay loop&gt;
+            &lt;source src="Audios/track.wav" type="audio/wav"&gt;
+            &lt;source src="Audios/track.mp3" type="audio/mpeg"&gt;
+            &lt;source src="Audios/track.ogg" type="audio/ogg"&gt;
+            &lt;p&gt;Seu navegador não suporta áudio &lt;a href="Audios/track.wav"
+            download="track.wav" type="audio/wav"&gt;&lt;/a&gt;&lt;/p&gt;
+        &lt;/audio&gt;
+    </code></pre>
+    
+    <p>Para colocarmos um áudio no site, utilizamos a tag <code>&lt;audio&gt;</code> com o atributo <code>controls</code>. Assim, usando a tag <code>&lt;source&gt;</code> entre as tags <code>&lt;audio&gt;</code> e <code>&lt;/audio&gt;</code>, indicamos o caminho do arquivo usando o atributo <code>src="caminho.mp3"</code> e dizemos ao navegador qual formato de arquivo se trata com o atributo <code>type="audio/formato"</code>.</p>
+    <p>Além disso, deve-se adicionar outros formatos de áudio, incluindo mais tags <code>&lt;source&gt;</code>, para caso o navegador não suporte o primeiro formato indicado. Antes de fechar <code>&lt;/audio&gt;</code>, devemos pôr uma mensagem para ser exibida se o navegador não suportar nenhum dos formatos do áudio. Esse mensagem pode conter um link para a descrição do áudio ou download do mesmo.</p>
+    <p>O código ficaria assim:</p>
+    <pre><code>
+        &lt;audio controls&gt;
+            &lt;source src="audios/arquivo.mp3" type="audio/mpeg"&gt;
+            &lt;source src="audios/arquivo.wav" type="audio/wav"&gt;
+            &lt;p&gt;O navegador não tem suporte para áudio.&lt;/p&gt; 
+        &lt;/audio&gt;
+    </code></pre>
+    <p>Seguindo esse código, o resultado deve ser esse:</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="Audios/latido.wav" type="audio/wav">
+        <p>Seu navegador não suporta formato .wav!</p>
+    </audio>
+    <br>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="Audios/cavalo.mp3" type="audio/mpeg">
+        <source src="Audios/cavalo.wav" type="audio/wav">
+        <p>Seu navegador não suporta os formatos .mp3 e .wav!</p>
+    </audio>
+    <p>
+        <ul type="square">
+            <li>É muito importante que o o atributo <code>preload</code> seja definido para <code>"metadata"</code> para que o navegador carregue apenas as informações do áudio. Caso não seja especificado, será feito o carregamento completo do arquivo, mesmo sem ser executado.</li>
+            <li>O atributo <code>controls</code> deve ser colocado na tag <code>&lt;audio&gt;</code>, caso contrário o player não será exibido.</li>
+            <li>O atributo <code>autoplay</code> somente funcionará com com o atributo <code>muted</code> em seguida.</li>
+            <ul>
+                <li>Os navegadores bloqueiam a axecução automatica de qualquer mídia com som, <em><abbr title="por padrão">by default</abbr></em>. É necessário a autorização manual do usuário.</li>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="Imagens/permaudio-reduz.jpg" type="image/jpeg">
+                    <img src="Imagens/permaudio.jpg" alt="Imagem da barra de navegação indicando a área de permissões da página">
+                </picture>
+            </ul>
+            <li>É importante inserir mais de um formato de arquivo (atributo <code>source</code>) e uma mensagem (tag <code>&lt;p&gt;</code>). O navegador lê de cima para baixo, priorizando o primeiro arquivo suportado. Caso não suporte nenhum, ele exibirá a mensagem.</li>
+            <li>Os formatos suportados são:</li>
+            <ul>
+                <li>.mp3 - <code>type="audio/mpeg"</code></li>
+                <li>.wav - <code>type="audio/wav"</code></li>
+                <li>.ogg - <code>type="audio/ogg"</code></li>
+            </ul>
+            <li>Para mais informações, acesse: <a href="https://www.w3schools.com/tags/tag_audio.asp">W3School: HTML audio Tag</a>.</li>
+        </ul>
+    </p>
+    <audio preload="metadata" controls>
+        <source src="Audios/track.wav" type="audio/wav">
+        <source src="Audios/track.mp3" type="audio/mpeg">
+        <source src="Audios/track.ogg" type="audio/ogg">
+        <p>Seu navegador não suporta áudio <a href="Audios/track.wav" download="track" type="audio/wav"></a></p>
+    </audio>
+
+</body>
+</html>

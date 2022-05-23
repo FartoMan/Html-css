@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body {
+    background-color: antiquewhite;
+    color: chocolate;
+    font-family: Arial;
+    font-size: 12pt;
+}
+
+h1 {
+    color: brown;
+}
+
+h2 {
+    color: burlywood;
+}
+
+a {
+    color: blue;
+}
