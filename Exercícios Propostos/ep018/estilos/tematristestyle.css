@@ -42,13 +42,40 @@ main h1 {
 }
 
 main p {
+    text-indent: 30px;
     text-align: justify;
+    line-height: 2em;
 }
 
 main img {
     width: 100%;
 }
 
+div.imagem {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+div.imagem p {
+    display: inline-block;
+    max-width: 380px;
+}
+
+div.imagem img {
+    display: inline-block;
+    width: 250px;
+    border-radius: 10px;
+}
+
 article.principal img {
     text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 0.8em;
 }
