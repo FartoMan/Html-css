@@ -51,17 +51,18 @@ main img {
     width: 100%;
 }
 
-div.imagem {
-    display: inline-block;
+.imagem-texto  {
     border: 1px solid black;
 }
 
-div.imagem p {
+p.imagem-texto {
     display: inline-block;
+    min-width: 300px;
     max-width: 380px;
+    text-align: top;
 }
 
-div.imagem img {
+img.imagem-texto {
     display: inline-block;
     width: 250px;
     border-radius: 10px;
