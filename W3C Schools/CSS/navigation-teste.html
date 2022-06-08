@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 30px;
+            background-color: cyan;
+            text-align: center;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: aquamarine;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        .dropdown-content {
+            background-color: rgb(169, 255, 226);
+            display: none;
+            position: absolute;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a {
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        h1, h2, p {
+            padding-left: 30px;
+        }
+
+        article {
+            margin: auto;
+            width: 50%;
+            padding-bottom: 15px;
+        }
+
+        section {
+            padding: 10px 0px 10px 15px;
+        }
+    </style>
+    <title>Navigation: praticando</title>
+</head>
+<header>
+    <h1>Teste de Barra de Navegação</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#">Início</a></li>
+        <li class="dropdown">
+            <a class="dropdbtn">Artigos</a>
+            <div class="dropdown-content">
+                <a href="#t01">Título 1</a>
+                <a href="#t02">Título 2</a>
+            </div>
+        </li>
+        <li><a href="#">Sobre</a></li>
+    </ul>
+</nav>
+<body>
+    <h1>Artigos</h1>
+    <article id="t01">
+        <h1>Título 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil possimus laborum odit, laboriosam vel blanditiis iure reiciendis officia, recusandae magni corrupti placeat quaerat optio molestiae tenetur accusamus, voluptatum cum!</p>
+        <section>
+            <h2>Subtítulo 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque harum amet incidunt ad laboriosam voluptatibus necessitatibus accusamus consequatur! In cum vero voluptatem eligendi quia fugiat culpa saepe magnam, expedita ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam explicabo aut sit esse necessitatibus. Optio ea tenetur eos quas necessitatibus ut velit maiores molestiae nemo. Explicabo accusantium libero blanditiis ullam.</p>
+        </section>
+        <section>
+            <h2>Subtítulo 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptatum deserunt dignissimos perspiciatis fugiat fugit culpa ex, aspernatur laboriosam vero iure illum voluptates, facilis veniam voluptas vitae! Error, cumque cupiditate.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque facilis ut velit neque ea a laborum nihil non, recusandae ducimus aut quibusdam porro? Quibusdam facere vitae officia assumenda, error molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores laborum, reprehenderit enim distinctio id inventore temporibus velit, nemo asperiores corrupti ullam cumque perspiciatis, quia magnam quidem. Veniam, dolor minima!</p>
+        </section>
+    </article>
+    <article id="t02">
+        <h1>Título 2</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil repudiandae deserunt placeat soluta similique! Alias, ipsam inventore. Exercitationem maxime facere necessitatibus laboriosam officia magnam in tempore ipsam, accusantium cupiditate. Placeat.</p>
+        <section>
+            <h2>Subtítulo 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error excepturi eaque iste soluta consequuntur aspernatur nostrum, fugiat quidem vero! Fuga eaque, beatae enim ex odio quaerat ullam quis earum distinctio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut praesentium perspiciatis obcaecati minima a at voluptate necessitatibus recusandae illum ratione assumenda ducimus, laborum mollitia eos? Minus amet dolores incidunt molestias.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam saepe sequi sit, quos enim consequatur accusamus soluta numquam nulla qui facilis illo quo iure autem ratione tempora distinctio. Deserunt, provident?</p>
+        </section>
+        <section>
+            <h2>Subtítulo 2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis fugit et voluptates eaque iusto totam corrupti rerum eligendi veniam, reprehenderit est quaerat, id labore exercitationem porro error alias numquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus perferendis aspernatur molestiae esse officiis animi, cum qui corrupti et possimus quae magnam nam libero molestias, optio ex alias eligendi. Fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quo perferendis culpa autem adipisci dolorum a magnam vitae. Praesentium veritatis dicta minus voluptatum maiores temporibus ipsum dignissimos, id sapiente itaque.</p>
+        </section>
+    </article>
+</body>
+</html>
