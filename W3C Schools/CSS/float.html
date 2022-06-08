@@ -5,10 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        article {
-            width: 100%;
-            border: 1px solid black;
+        * {
+            box-sizing: border-box;
         }
+
+        h1, h2 {
+            padding-left: 30px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.6em;
+        }
+
+        article {
+            max-width: 900px;
+            border: 1px solid black;
+            clear: left;
+        }
+
         section {
             float: left;
             width: 400px;
@@ -23,6 +41,16 @@
             background-image: radial-gradient(circle, yellow, green, blue, black);
         }
 
+        div.cx {
+            float: left;
+            width: 30%;
+            height: 30%;
+            margin: 2px;
+            background-image: none;
+            text-align: center;
+            padding: 10px;
+        }
+
         .float {
             float: left;
         }
@@ -34,11 +62,20 @@
         <h1>&lt;float&gt;</h1>
         <section>
             <h2>Sem &lt;float&gt;</h2>
-            <p><div></div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt voluptatem unde mollitia quos, non autem sit, a placeat voluptas officiis quasi tenetur laborum accusamus? Accusamus velit nobis facere error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime magni dignissimos quos deserunt, obcaecati, explicabo ab mollitia maiores nemo ipsa sapiente ea officia placeat doloribus a, at hic earum nam.</p>
+            <p><div class="semfloat"></div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt voluptatem unde mollitia quos, non autem sit, a placeat voluptas officiis quasi tenetur laborum accusamus? Accusamus velit nobis facere error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime magni dignissimos quos deserunt, obcaecati, explicabo ab mollitia maiores nemo ipsa sapiente ea officia placeat doloribus a, at hic earum nam.</p>
         </section>
         <section>
             <h2>Com &lt;float: left&gt;</h2>
             <p><div class="float"></div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt voluptatem unde mollitia quos, non autem sit, a placeat voluptas officiis quasi tenetur laborum accusamus? Accusamus velit nobis facere error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime magni dignissimos quos deserunt, obcaecati, explicabo ab mollitia maiores nemo ipsa sapiente ea officia placeat doloribus a, at hic earum nam.</p>
+        </section>
+    </article>
+    <article>
+        <h1>Exemplos</h1>
+        <section>
+            <h2>Caixas lado a lado</h2>
+            <div class="cx" style="background-color: #aaa;">Caixa 1</div>
+            <div class="cx" style="background-color: rgb(136, 136, 136);">Caixa 2</div>
+            <div class="cx" style="background-color: #555;">Caixa 3</div>
         </section>
     </article>
 </body>
