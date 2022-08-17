@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteração de Variáveis</title>
+    <style>
+        :root {
+            --cor1: green;
+            --cor2: blue;
+        }
+
+        header {
+            background-color: var(--cor1);
+            color: var(--cor2);
+        }
+
+        nav ul {
+            background-color: cyan;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 10px 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            background-color: beige;
+            color: brown;
+            padding: 5px;
+        }
+
+        #cor1:active ul{
+            background-color: blueviolet;
+            --cor1: black;
+        }
+
+        nav a#cor2:active ul {
+            background-color: var(--cor1);
+            color: var(--cor2)
+        }
+    </style>
+</head>
+<header>
+    <h1>As cores devem mudar</h1>
+    <p>Que as cores mudem</p>
+</header>
+<nav>
+    <ul>
+        <li><a href="#void" id="cor1">Cor 1</a></li>
+        <li><a href="#void" id="cor2">Cor 2</a></li>
+    </ul>
+</nav>
+<body>
+    <h1>Teste de alteração de variáveis</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum odio praesentium fuga ipsum aspernatur assumenda, quae maiores ipsam eius, fugit commodi! Iste unde sequi nam omnis atque. Possimus, non minima. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam natus libero laborum suscipit ea quas. Quidem officiis laborum molestias veritatis incidunt reiciendis cum quisquam assumenda aspernatur iusto harum, modi cupiditate?</p>
+</body>
+</html>
