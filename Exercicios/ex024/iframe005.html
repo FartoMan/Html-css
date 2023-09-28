@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+</head>
+<body>
+    <h1>iframe com mais segurança</h1>
+    <h2>Atributo <code>sandbox</code></h2>
+    <p>O atributo <code>sandbox</code> é utilizado para bloquear a execução de algumas funcionalidades que podem estar presentes em um site linkado no iframe. Dos bloqueios, estão scripts, formulários, execução de vídeos e áudios, e outros recursos.</p>
+    <p>Os bloqueios podem ser tanto gerais quanto mais pontuais</p>
+    <h3>sandbox="sandbox"</h3>
+    <p>Bloqueia tudo.</p>
+    <iframe src="paginas/pagina006.html" height="50px" sandbox>
+        Não funciona o seu navagador.
+    </iframe>
+    <h3>sandobox="allow-scripts"</h3>
+    <p>Permite scripts</p>
+    <iframe src="paginas/pagina006.html" height="50px" sandbox="allow-scripts">
+        Não funciona o seu navagador.
+    </iframe>
+    
+    <h2>Atributo <code>referrerpolicy</code></h2>
+    <p>O atributo <code>referrerpolicy</code> é utilizado para bloquear o envio de informações do "site principal" para o site aberto no iframe, como portas de acesso, cookies e várias informações que podem ser colhidas apartir das portas abertas no seu site para o site no iframe.</p>
+    <h3>referrerpolicy="no-referrer"</h3>
+    <p>Bloqueia a colheita de qualquer dado.</p>
+    <iframe src="paginas/pagina006.html" height="50px" referrerpolicy="no-referrer">
+        Não funciona o seu navagador.
+    </iframe>
+        
+    <p>Nota: cada tag iframe utilizada tem de ser tratada individualmente.</p>
+</body>
+</html>

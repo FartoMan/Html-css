@@ -2,27 +2,30 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iframe</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        iframe {
+        .nav {
             display: block;
+            width: 500px;
+            height: fit-content;
             margin: auto;
-            width: 300px;
+        }
+        .erro {
+            color: red;
         }
     </style>
+    <title>iframe</title>
 </head>
 <body>
-    <h1>Teste com iframe</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores culpa similique libero distinctio sint corporis reprehenderit dignissimos, voluptatum aspernatur, porro, dolorem nobis unde quaerat minima illum harum deserunt at in. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quisquam. In, corrupti delectus. Ullam accusamus, ipsam laboriosam cupiditate quia magni temporibus reiciendis asperiores praesentium, quidem libero labore adipisci rerum perspiciatis.</p>
+    <h1>Testes com iframe</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maxime vel laudantium, laboriosam voluptates iste quas saepe eaque? Dolorum vitae perspiciatis, possimus vel optio at obcaecati! Quaerat officia rem impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptas voluptates mollitia reiciendis doloremque natus corporis, quam ipsam recusandae inventore suscipit ab asperiores quos, odio omnis cumque neque sint ratione.</p>
 
-    <iframe src="pagina001.html" frameborder="0" style="width: 500px; height: 500px"></iframe>
+    <iframe src="paginas/pagina001.html" frameborder="0" width="500px" height="80px">
+        <p class="erro">Infelizmente, seu navegador não é compatível com o recurso.</p>
+    </iframe>
 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo cupiditate labore dicta eum nisi, sapiente unde. Reprehenderit, quaerat, fugiat iure quas enim aliquam, error culpa soluta asperiores ex excepturi molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur vero numquam illo? Aperiam libero recusandae maiores non? Dolorum dolorem ex consectetur nam voluptatibus enim laboriosam eum quisquam eaque nihil.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maxime vel laudantium, laboriosam voluptates iste quas saepe eaque? Dolorum vitae perspiciatis, possimus vel optio at obcaecati! Quaerat officia rem impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptas voluptates mollitia reiciendis doloremque natus corporis, quam ipsam recusandae inventore suscipit ab asperiores quos, odio omnis cumque neque sint ratione.</p>
+
+    <iframe src="paginas/pagina002.html" frameborder="0" scrolling="no" class="nav"></iframe>
 </body>
 </html>

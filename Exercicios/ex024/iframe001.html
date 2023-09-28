@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        h3 > code {
+            display: block;
+            text-align: center;
+        }
+        #incode {
+            font-weight: normal;
+        }
+        #piframe {
+            display: block;
+            margin: auto;
+            width: 650px;
+            height: 395px;
+        }
+        .desc {
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+        .desc ul {
+            list-style: none;
+        }
+        .desc ul>li {
+            display: inline-block;
+            margin: 0 25px;
+        }
+    </style>
+    <title>Estudos de iframe</title>
+</head>
+<body>
+    <h1>Testando o uso de iframes</h1>
+    <h2>Exercício para entender como funciona o uso da tag <code>&lt;iframe&gt;</code> e como é apresentada no conteúdo do site.</h2>
+    <h3><code>&lt;iframe src="https://link.com" frameborder="0"&gt;<span id="incode">Texto se não for compatível.</span>&lt;iframe&gt;</code></h3>
+    <iframe id="piframe" src="https://cursoemvideo.com/" frameborder="0" scrolling="no"></iframe>
+    <div class="desc">
+        <h4>Parâmetros padrões da tag:</h4>
+        <ul>
+            <li><code>height: 150px</code></li>
+            <li><code>width: 300px</code></li>
+            <li><code>frameborder: 0 | 1</code></li>
+            <li><code>scrolling</code>: yes | no | auto</li>
+        </ul>
+    </div>
+    <p>
+        Acessando o site do 
+        
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0" scrolling="no">
+
+        </iframe>
+    
+        para aprender a programar.
+    </p>
+    <p>
+        O Repositório do Charley <iframe src="https://github.com/fartoman" frameborder="0">
+            <a href="http://olhares.com/charleyw">olhares.com/charleyw</a>
+        </iframe>
+    </p>
+    <h3>Alguns sites não permitem a sua exibição em outros sites com o uso de iframe.</h3>
+</body>
+</html>

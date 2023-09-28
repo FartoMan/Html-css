@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+            margin: 0 15px;
+            background-color: lightsalmon;
+            padding: 8px 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.336);
+        }
+        li:hover a {
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .erro {
+            color: red;
+        }
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+            border-radius: 30px;
+            box-shadow: inset 0px 0px 10px black;
+        }
+    </style>
+    <title>Trabalhando com iframe</title>
+</head>
+<body>
+    <h1>Faça uma escolha!</h1>
+    <p>Clique em uma das opções abaixo</p>
+
+    <ul>
+        <li><a href="paginas/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas/pagina002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas/pagina003.html" target="frame">Terceira página</a></li>
+        <li><a href="paginas/pagina004.html" target="frame">Quarta página</a></li>
+    </ul>
+
+    <p>O conteúdo carregado é exibido no quadro abaixo atravéz da tag <code>&lt;iframe&gt;</code>.</p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorota lorota lorota lorota lorota lorota</p><img src='imagens/logo.png' height='250px'>" id="tela" name="frame">
+        <p class="erro">Infelizmente, seu navegador não é compatível com este recurso.</p>
+    </iframe>
+
+    <p>Este processo é feito colocando o iframe como alvo da âncora (<code>&lt;a&gt;</code>). Assim, atribui-se um nome para o iframe (<code>name=""</code>) e um alvo para a âncora (<code>target=""</code>).</p>
+    <p>Note que a página carregada dentro do iframe é independente da página atual.</p>
+</body>
+</html>
