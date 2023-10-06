@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+
+    <!--
+        Neste formulário, é solicitado o preenchimento da senha,
+        por isso utilizamos o método POST.
+
+        Também vemos os atributos:
+        required -> para o envio do formulário, este campo tem que ser preenchido
+        minlength -> quantidade mínima de caracteres para ser válidado
+        maxlength -> quantidade máxima de caracteres para ser validado
+        size -> tamanho fixo do campo em caracteres (size="10")
+        placeholder -> Texto 'explicativo' dentro do campo
+    -->
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="20" size="20" placeholder="Nome de usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="16" size="16" placeholder="Senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
