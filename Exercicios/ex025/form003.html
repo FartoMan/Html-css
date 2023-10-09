@@ -4,62 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>MEGA NOTAS</h1>
-        <p>Suas melhores notas aqui!</p>
-    </header>
-    <main>
-        <aside id="aesq">
-            <h2>Envie uma pergunta</h2>
-            <p>
-                <label for="ipergunta">Pergunta</label><br>
-                <textarea name="pergunta" id="ipergunta" cols="30" rows="10" minlength="20" maxlength="400"></textarea>
-            </p>
-            <p>
-                <input type="reset" value="Limpar" class="btn">
-                <input type="submit" value="Enviar" class="btn">
-            </p>
-        </aside>
-        
-        <section>
-            <h2>Final de Semestre</h2>
-            <form action="cadastro.php" method="get" autocomplete="on">
-                <p>
-                    <label for="inome">Nome</label><br>
-                    <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" required size="50vw">
-                </p>
-                <p>
-                    <label for="imedia">Média</label><br>
-                    <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 - 10" required>
-                </p>
-                <p>
-                    <label for="imes">Mês</label><br>
-                    <input type="month" name="mes" id="imes" value="2023-10">
-                </p>
-                <p>
-                    <label for="idia">Dia</label><br>
-                    <input type="date" name="Dia" id="idia" value="2023-10-09">
-                </p>
-                <p>
-                    <label for="ihora">Hora</label><br>
-                    <input type="time" name="hora" id="ihora">
-                </p>
-    
-                <p>
-                    <input type="submit" value="Enviar" class="btn">
-                    <input type="reset" value="Limpar" class="btn">
-                </p>
-            </form>
-        </section>
-        <aside id="adir">
-            <h2>Lorem ipsum dolorus</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi sit reprehenderit hic, commodi autem quis facilis recusandae quo amet sapiente, obcaecati fugiat corporis, vitae porro maxime sint aut nulla quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quasi suscipit eum repellat reiciendis, dolores error alias veritatis autem omnis, sapiente quo repudiandae magnam vero modi fugit perspiciatis numquam placeat?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi sit reprehenderit hic, commodi autem quis facilis recusandae quo amet sapiente, obcaecati fugiat corporis, vitae porro maxime sint aut nulla quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quasi suscipit eum repellat reiciendis, dolores error alias veritatis autem omnis, sapiente quo repudiandae magnam vero modi fugit perspiciatis numquam placeat?</p>
-        </aside>
-    </main>
+    <h1>Terceira Aula</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label><br>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" required>
+        </p>
+        <p>
+            <label for="imedia">Média</label><br>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 - 10" required>
+        </p>
+        <p>
+            <label for="imes">Mês</label><br>
+            <input type="month" name="mes" id="imes" value="2023-10">
+        </p>
+        <p>
+            <label for="idia">Dia</label><br>
+            <input type="date" name="Dia" id="idia" value="2023-10-09">
+        </p>
+        <p>
+            <label for="ihora">Hora</label><br>
+            <input type="time" name="hora" id="ihora">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar" class="btn">
+            <input type="reset" value="Limpar" class="btn">
+        </p>
+    </form>
     
 </body>
 </html>
