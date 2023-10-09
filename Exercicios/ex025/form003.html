@@ -3,73 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Formulário</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        body {
-            width: 100vw;
-            height: 100vh;
-            position: absolute;
-        }
-        section#formulario {
-            position: relative;
-            width: max-content;
-            padding: 30px;
-            background-color: rgb(234, 250, 162);
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-        h1 {
-            margin: 10px 0px;
-            text-align: center;
-        }
-        h2 {
-            margin: 5px 0px;
-            text-align: center;
-        }
-        form {
-            position: relative;
-            width: fit-content;
-            left: 50%;
-            transform: translateX(-50%);
-            margin: 15px 0px;
-            padding: 12px;
-            background-color: aquamarine;
-            text-align: center;
-            border-radius: 12px;
-
-            box-shadow: 0px 0px 7px rgb(181, 238, 255), inset 0px 0px 5px rgba(255, 255, 255);
-        }
-        form p {
-            margin: 10px 0;
-        }
-        input {
-            text-align: center;
-        }
-    </style>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="formulario">
-        <h1>Meu primeiro formulário</h1>
-        <h2>Faça o seu registroi nesse fantabuloso jogo</h2>
+    <header>
+        <h1>MEGA NOTAS</h1>
+        <p>Suas melhores notas aqui!</p>
+    </header>
+    <main>
+        <aside id="aesq">
+            <h2>Lorem ipsum dolorus</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi sit reprehenderit hic, commodi autem quis facilis recusandae quo amet sapiente, obcaecati fugiat corporis, vitae porro maxime sint aut nulla quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quasi suscipit eum repellat reiciendis, dolores error alias veritatis autem omnis, sapiente quo repudiandae magnam vero modi fugit perspiciatis numquam placeat?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi sit reprehenderit hic, commodi autem quis facilis recusandae quo amet sapiente, obcaecati fugiat corporis, vitae porro maxime sint aut nulla quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quasi suscipit eum repellat reiciendis, dolores error alias veritatis autem omnis, sapiente quo repudiandae magnam vero modi fugit perspiciatis numquam placeat?</p>
+        </aside>
+        
+        <section>
+            <h2>Final de Semestre</h2>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <p>
+                    <label for="inome">Nome</label><br>
+                    <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" required size="50vw">
+                </p>
+                <p>
+                    <label for="imedia">Média</label><br>
+                    <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 - 10" required>
+                </p>
+                <p>
+                    <label for="imes">Mês</label><br>
+                    <input type="month" name="mes" id="imes" value="2023-10">
+                </p>
+                <p>
+                    <label for="idia">Dia</label><br>
+                    <input type="date" name="Dia" id="idia" value="2023-10-09">
+                </p>
+                <p>
+                    <label for="ihora">Hora</label><br>
+                    <input type="time" name="hora" id="ihora">
+                </p>
     
-        <form action="cadastro.php" method="post" autocomplete="on">
-            <p><label for="iNome"><strong>Nome</strong> </label><br>
-            <input type="text" name="Nome" id="iNome" minlength="3" maxlength="40" size="45" required></p>
+                <p>
+                    <input type="submit" value="Enviar" class="btn">
+                    <input type="reset" value="Limpar" class="btn">
+                </p>
+            </form>
+        </section>
+        <aside id="adir">
+            <h2>Lorem ipsum dolorus</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi sit reprehenderit hic, commodi autem quis facilis recusandae quo amet sapiente, obcaecati fugiat corporis, vitae porro maxime sint aut nulla quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quasi suscipit eum repellat reiciendis, dolores error alias veritatis autem omnis, sapiente quo repudiandae magnam vero modi fugit perspiciatis numquam placeat?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi sit reprehenderit hic, commodi autem quis facilis recusandae quo amet sapiente, obcaecati fugiat corporis, vitae porro maxime sint aut nulla quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quasi suscipit eum repellat reiciendis, dolores error alias veritatis autem omnis, sapiente quo repudiandae magnam vero modi fugit perspiciatis numquam placeat?</p>
+        </aside>
+    </main>
     
-            <p><label for="iNick"><strong>Nick</strong></label><br>
-            <input type="text" name="Nick" id="iNick" minlength="3" maxlength="20" size="45" required></p>
-    
-            <p><label for="iSenha"><strong>Senha</strong></label><br>
-            <input type="password" name="Senha" id="iSenha" minlength="8" maxlength="20" size="45" required></p>
-    
-            <p><input type="submit" value="Registrar"></p>
-        </form>
-    </section>
 </body>
 </html>
