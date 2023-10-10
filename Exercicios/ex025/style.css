@@ -1,57 +1,12 @@
 @charset "UTF-8";
 
 * {
-    margin: 0;
-    padding: 0;
-}
-body {
-    width: 100vw;
-    height: calc(100vh - 100px);
-}
-header {
-    text-align: center;
-    background-color: lightblue;
-    height: 100px;
-}
-header h1 {
-    padding-top: 20px;
-    font-size: 36px;
-}
-main {
-    display: flex;
-    height: 100%;
-    text-align: center;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-aside {
-    background-color: lightgoldenrodyellow;
-    width: 25vw;
-    height: 100%;
+fieldset {
+    background-color: rgba(0, 0, 0, 0.1);
 }
-aside h2 {
-    margin: 10px;
-}
-aside p {
-    margin: 15px 15px;
-    text-align: justify;
-}
-section {
-    width: 50vw
-}
-section h2 {
-    margin: 30px;
-    font-size: 28px;
-}
-section p, section input {
-    font-size: 20px;
-    text-align: center;
-}
-section p {
-    margin: 15px;
-}
-section p:last-child {
-    margin-top: 45px;
-}
-.btn {
-    padding: 5px 10px;
+h1 {
+    margin: 0 0 10px 0;
 }

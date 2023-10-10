@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quinta Aula</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M"> <label for="imasc">Masculino</label>
+            <input type="radio" name="sexo" id="ifem" value="F" checked> <label for="ifem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <p>Input:radio -> O <i>name</i> tem que ser o mesmo para todos os campos</p>
+    <p>Input:radio -> <i>value</i> é para saber qual valor foi enviado</p>
+    <p>Input:radio e checkbox -> <i>checked</i> deixa um quadro já marcado</p>
+</body>
+</html>
