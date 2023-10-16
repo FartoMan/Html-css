@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white
+        }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #233eff;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 0px #1526a7;
+            padding: 10px;
+        }
+
+        article {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, .75);
+        }
+
+        article h2 {
+            margin: 10px;
+        }
+
+        article p {
+            margin: 10px;
+            text-align: right;
+        }
+
+        @media screen and (orientation: portrait) {
+            body {
+                background-image: url('../imagens/cev-portrait.jpg');
+                background-position: center bottom;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+                body {
+                background-image: url('../imagens/cev-landscape.jpg');
+                background-position: left bottom;
+            }
+
+            article {
+                width: 400px;
+                right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+    <article>
+        <h2>Veja bem...</h2>
+        <p>Mudando a orientação do dispositivo, o pode ser reposicionado e apresentado de formas diferentes, cada um tendo as configurações feitas para cada tipo de experiência do usuário.</p>
+        <p>Cada dispositivo é experiênciado de uma forma diferente — o celular com a ponta dos dedos; o computador com teclado e mouse; o tablete, que é maior que um celular, pode estar sendo utilizado até mesmo com uma caneta específica.</p>
+    </article>
+</body>
+</html>
