@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Esses links são os Media types -->
+    <link rel="stylesheet" href="estilos/tela.css" media="screen">
+    <link rel="stylesheet" href="estilos/impressora.css" media="print">
+    <title>Media Query</title>
+</head>
+<body>
+    <header>
+        <h1>Notícias</h1>
+        <menu>
+            <ul>
+                <li>Exercícios</li>
+                <li>Esportes</li>
+                <li>Leituras</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Meu primeiro exercício com Media Query</h2>
+
+            <p><strong>Media Queries (MQ)</strong> são formas de exibir o conteúdo em diferentes tipos de telas com configurações diferentes. Ao invés de criar um arquivo personalizado para cada configuração, criamos configurações para cada formato sem ter que alterar o seu conteúdo.</p>
+
+            <p>Nesse exercício, por exemplo, praticamos a personalização do conteúdo na <i>tela do computador</i> e para o <i>formato para impressão</i> <a href="" onclick="window.print()">(Crtl + P)</a>. Quando comparado, vemos claramente que cada conteúdo é disposto e exibido de uma forma diferente nesses dois formatos.</p>
+
+            <p>Usando esse exemplo de formato tela do computador e impresso, vemos a diferença do que realmente é necessário ser exibido ou não, como o menu de navagação e o espaçamento, como também o tipo de fonte utilizado além do texto ao final do artigo.</p>
+
+            <p>No arquivo html, utilizamos dois links para acessar duas folhas de estilo diferentes sem afetar o estilo de uma ou de outra quando forem ser exibidos a partir de cada <strong>media-type</strong>.</p>
+
+            <h2>O que é Media Query?</h2>
+            <p>Media Query é a união de Media Type e Media Feature... Como assim? Bom, <i>Media Type</i> é o tipo de mídia, já <i>Media Feature</i> são as características da mídia</p>
+
+            <h3>Atributos</h3>
+            <p>
+                media="screen"<br>
+                media="print"
+            </p>
+        </article>
+    </main>
+</body>
+</html>
