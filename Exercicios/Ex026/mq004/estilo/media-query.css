@@ -24,7 +24,7 @@
         border: 2px solid black;
     }
     main::after {
-        content: 'Impressão feita através do site de exercício de Charley: fartoman.github.io'
+        content: 'Impressão feita através do site de exercício de Charley: https://fartoman.github.io/Html-css/Exercicios/Ex026/mq004/index.html';
     }
     main h1 {
         text-shadow: none;
